@@ -35,7 +35,7 @@ server.post('/api/messages', connector.listen());
 //=========================================================
 
 var Enum = require('enum');
-var rootFlow = new Enum(['payment', 'issue','Yes','No','Reset', 'StartGreeting'],{ignoreCase:true});
+var rootFlow = new Enum(['payment', 'issue','Yes','No','Reset', 'StartGreeting','EmployeeData'],{ignoreCase:true});
 const client = new Wit({accessToken: 'OMA6J3GMQV43OCFXKIA3QKP7BJQCFDBT'});
 
 var commonAddress= {};
@@ -110,17 +110,90 @@ bot.dialog('/UserRegistration',[
         builder.Prompts.text(session, "Sure! May i know your employee id please?");
     },
     function (session,results,next) {
-        // results.response will have employee Id from user
-
         var userSpecificAddress = session.message.address.user;
 
-        // call service to update user registration
-        RegisterUser(userSpecificAddress);
+        ValidateEmployeeId(session, results.response, function (data,isValidated) {
+            session.dialogData.data = data;
+            session.dialogData.isValidated = isValidated;
+            if (data === undefined || data.name == undefined) {
+                if (isValidated === true) {
+                    // call service to update user registration
+                    RegisterUser(userSpecificAddress, response);
 
-        session.send(session.message.user.name + ', your registration is confirmed.');
-        session.beginDialog('/ConversationEnd');
+                    session.send(session.message.user.name + ', your registration is confirmed.');
+                    session.beginDialog('/ConversationEnd');
+                }
+                else {
+                    session.send("you can only register for yourself, try again with your employee id");
+                    builder.Prompts.text(session, "Please enter valid employee id");
+                }
+            }
+            else {
+                session.send("Provided employee id not found");
+                builder.Prompts.text(session, "Please enter valid employee id");
+            }
+        })
+    },
+    function (session,results,next) {
+        var userSpecificAddress = session.message.address.user;
+        if(session.dialogData.isValidated === false) {
+            ValidateEmployeeId(session, results.response, function (data,isValidated) {
+                session.dialogData.data = data;
+                session.dialogData.isValidated = isValidated;
+                if (data === undefined || data.name == undefined) {
+                    if (isValidated === true) {
+                        // call service to update user registration
+                        RegisterUser(userSpecificAddress, response);
+
+                        session.send(session.message.user.name + ', your registration is confirmed.');
+                        session.beginDialog('/ConversationEnd');
+                    }
+                    else {
+                        session.send("Please try again with valid details!");
+                        session.beginDialog('/ConversationEnd');
+                    }
+                }
+                else {
+                    session.send("Please try again with valid details!");
+                    session.beginDialog('/ConversationEnd');
+                }
+            })
+        }
+        else {
+            next();
+        }
+    },
+    function (session,results) {
+
     }
 ]);
+
+function ValidateEmployeeId(session,response,cb) {
+    // results.response will have employee Id from user
+
+    /*const client = new Wit({accessToken: 'OMA6J3GMQV43OCFXKIA3QKP7BJQCFDBT'});
+     client.message(results.response, {}).then((data) => {
+
+     })
+     .catch(console.error);*/
+    GetUserDetails(response,function (data) {
+        var userFullName = data.name;
+        var userNameArray = data.name.split(" ");
+        var IsValidated = true;
+        if(userNameArray.length>2) {
+            userFullName = userNameArray[0] + " " + userNameArray[2];
+        }
+        if(session.message.user.name.toLowerCase() === userFullName.toLowerCase())
+        {
+            IsValidated = true;
+        }
+        else
+        {
+            IsValidated = false;
+        }
+        cb(data,IsValidated);
+    });
+}
 
 bot.dialog('/ConversationEnd',[
     function (session) {
@@ -133,8 +206,8 @@ bot.dialog('/ConversationEnd',[
 function RegisterUser(userAddress,EmployeeId) {
     'use strict';
     var options = {
-        "host": "bcone-hackathon.firebaseio.com",
-        "path": "/" + EmployeeId + "/.json?auth=OK1wjcXyjuDqTWeNKZA8H57RhrTWmVzKqgq00Cqa",
+        "host": "https://bcone-chatbot.firebaseio.com/",
+        "path": "/" + EmployeeId + "/.json?auth=0HY0myMya6iF18GcQ4ahwhx6dS9VWFUJ4ootQo8u",
         "method": "PATCH",
         "headers": {
             "Content-Type": "application/json"
@@ -151,6 +224,19 @@ function RegisterUser(userAddress,EmployeeId) {
     }).end(body);
 }
 
-function GetUserDetails() {
-
+function GetUserDetails(employeeId,cb) {
+    'use strict';
+    const endpoint = "https://bcone-chatbot.firebaseio.com/" + employeeId + "/.json?auth=0HY0myMya6iF18GcQ4ahwhx6dS9VWFUJ4ootQo8u"; // ENDPOINT GOES HERE
+    console.log(endpoint);
+    var body = "";
+    https.get(endpoint, (response) => {
+        response.on('data', (chunk) => {
+            body += chunk
+        })
+        response.on('end', () => {
+            var data = JSON.parse(body)
+            // console.log("data : " + JSON.stringify(data));
+            cb(data);
+        })
+    })
 }
