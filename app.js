@@ -101,7 +101,7 @@ bot.dialog('/', [
             .catch(console.error);
     },
     function (session,results) {
-
+        session.endDialog();
     }
 ]);
 
@@ -115,10 +115,10 @@ bot.dialog('/UserRegistration',[
         ValidateEmployeeId(session, results.response, function (data,isValidated) {
             session.dialogData.data = data;
             session.dialogData.isValidated = isValidated;
-            if (data === undefined || data.name == undefined) {
+            if (data !== undefined || data.name != undefined) {
                 if (isValidated === true) {
                     // call service to update user registration
-                    RegisterUser(userSpecificAddress, response);
+                    RegisterUser(userSpecificAddress, results.response);
 
                     session.send(session.message.user.name + ', your registration is confirmed.');
                     session.beginDialog('/ConversationEnd');
@@ -143,7 +143,7 @@ bot.dialog('/UserRegistration',[
                 if (data === undefined || data.name == undefined) {
                     if (isValidated === true) {
                         // call service to update user registration
-                        RegisterUser(userSpecificAddress, response);
+                        RegisterUser(userSpecificAddress, results.response);
 
                         session.send(session.message.user.name + ', your registration is confirmed.');
                         session.beginDialog('/ConversationEnd');
@@ -164,7 +164,7 @@ bot.dialog('/UserRegistration',[
         }
     },
     function (session,results) {
-
+        session.endDialog();
     }
 ]);
 
@@ -197,7 +197,6 @@ function ValidateEmployeeId(session,response,cb) {
 
 bot.dialog('/ConversationEnd',[
     function (session) {
-        session.conversationData  = {};
         session.send('Thank you so much for visiting :)');
         session.endDialog();
     }
@@ -206,7 +205,7 @@ bot.dialog('/ConversationEnd',[
 function RegisterUser(userAddress,EmployeeId) {
     'use strict';
     var options = {
-        "host": "https://bcone-chatbot.firebaseio.com/",
+        "host": "bcone-chatbot.firebaseio.com",
         "path": "/" + EmployeeId + "/.json?auth=0HY0myMya6iF18GcQ4ahwhx6dS9VWFUJ4ootQo8u",
         "method": "PATCH",
         "headers": {
