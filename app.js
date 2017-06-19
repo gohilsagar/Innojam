@@ -80,6 +80,7 @@ bot.dialog('/', [
             if(commonAddress !== undefined || commonAddress==={}) {
                 var commonAddress = session.message.address;
             }
+            session.send(JSON.stringify( session.message.address));
             console.log(JSON.stringify( session.message.address));
             session.send("Hey "+session.message.user.name+", Welcome to Innojam!");
             builder.Prompts.text(session, "would you like to register?");
