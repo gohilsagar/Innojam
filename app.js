@@ -77,12 +77,12 @@ bot.dialog('/', [
     function (session,args, next) {
         result = args || {};
         if (result == undefined || result.response == undefined) {
-            if(commonAddress !== undefined || commonAddress==={}) {
+            if (commonAddress !== undefined || commonAddress === {}) {
                 var commonAddress = session.message.address;
             }
-            session.send(JSON.stringify( session.message.address));
-            console.log(JSON.stringify( session.message.address));
-            session.send("Hey "+session.message.user.name+", Welcome to Innojam!");
+            //session.send(JSON.stringify( session.message.address));
+            console.log(JSON.stringify(session.message.address));
+            session.send("Hey " + session.message.user.name.split(" ")[0] + ", Welcome to Innojam!");
             builder.Prompts.text(session, "would you like to register?");
 
             //bot.send(new builder.Message().address(new IAddress '{"id":"0dac75a3-ede5-4c31-af5e-b95cb3791d85","channelId":"skypeforbusiness","user":{"id":"aditya.das@bcone.com","name":"Aditya Das"},"conversation":{"isGroup":true,"id":"NWYwNmJkY2Ijc2lwOmlubm9qYW1ib3RAYnJpc3RsZWNvbmVvbmxpbmUub25taWNyb3NvZnQuY29t"},"bot":{"id":"sip:innojambot@bristleconeonline.onmicrosoft.com","name":"sip:innojambot@bristleconeonline.onmicrosoft.com"},"serviceUrl":"https://webpoolsg20r04.infra.lync.com/platformservice/tgt-0b9142c259f65d3b918b34dd29074ee2/botframework"}'));
