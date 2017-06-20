@@ -88,6 +88,10 @@ bot.dialog('/', [
             session.dialogData.isRootShown = true;
             isShown = true;
         }
+        else
+        {
+            next();
+        }
     },
     function (session, results) {
         client.message(results.response, {}).then((data) => {
