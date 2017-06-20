@@ -67,7 +67,7 @@ bot.on('conversationUpdate', function (message) {
             /*bot.send(new builder.Message()
                 .address(message.address)
                 .text('Welcome ' + membersAdded + "! How can I help you?"));*/
-            bot.beginDialog(message.address,'/');
+            //bot.beginDialog(message.address,'/');
         }
     }
 });
@@ -84,6 +84,8 @@ bot.dialog('/', [
             console.log(JSON.stringify( session.message.address));
             session.send("Hey "+session.message.user.name+", Welcome to Innojam!");
             builder.Prompts.text(session, "would you like to register?");
+
+            //bot.send(new builder.Message().address(new IAddress '{"id":"0dac75a3-ede5-4c31-af5e-b95cb3791d85","channelId":"skypeforbusiness","user":{"id":"aditya.das@bcone.com","name":"Aditya Das"},"conversation":{"isGroup":true,"id":"NWYwNmJkY2Ijc2lwOmlubm9qYW1ib3RAYnJpc3RsZWNvbmVvbmxpbmUub25taWNyb3NvZnQuY29t"},"bot":{"id":"sip:innojambot@bristleconeonline.onmicrosoft.com","name":"sip:innojambot@bristleconeonline.onmicrosoft.com"},"serviceUrl":"https://webpoolsg20r04.infra.lync.com/platformservice/tgt-0b9142c259f65d3b918b34dd29074ee2/botframework"}'));
         }
         /*else if (result.response == "NU") {
             builder.Prompts.text(session, "Please try again");
@@ -117,16 +119,21 @@ bot.dialog('/UserRegistration',[
             session.dialogData.data = data;
             session.dialogData.isValidated = isValidated;
             if (data !== undefined || data.name != undefined) {
-                if (isValidated === true) {
-                    // call service to update user registration
-                    RegisterUser(userSpecificAddress, results.response);
+                if (data.registered === false) {
+                    if (isValidated === true) {
+                        // call service to update user registration
+                        RegisterUser(userSpecificAddress, results.response);
 
-                    session.send(session.message.user.name + ', your registration is confirmed.');
-                    session.beginDialog('/ConversationEnd');
+                        session.send(session.message.user.name.split(" ")[0] + ', your registration is confirmed.');
+                        session.beginDialog('/ConversationEnd');
+                    }
+                    else {
+                        session.send("you can only register for yourself, try again with your employee id");
+                        builder.Prompts.text(session, "Please enter valid employee id");
+                    }
                 }
                 else {
-                    session.send("you can only register for yourself, try again with your employee id");
-                    builder.Prompts.text(session, "Please enter valid employee id");
+                    session.beginDialog('/ConversationEnd');
                 }
             }
             else {
@@ -146,7 +153,7 @@ bot.dialog('/UserRegistration',[
                         // call service to update user registration
                         RegisterUser(userSpecificAddress, results.response);
 
-                        session.send(session.message.user.name + ', your registration is confirmed.');
+                        session.send(session.message.user.name.split(" ")[0] + ', your registration is confirmed.');
                         session.beginDialog('/ConversationEnd');
                     }
                     else {
@@ -166,6 +173,32 @@ bot.dialog('/UserRegistration',[
     },
     function (session,results) {
         session.endDialog();
+    }
+]);
+
+bot.dialog('/AlreadyRegistered',[
+    function (session) {
+        session.send(session.message.user.name.split(" ")[0] + ', your already registered.');
+        builder.prompts.text(session,"do you need any help?");
+    },
+    function (session,results) {
+        client.message(results.response, {}).then((data) => {
+            var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
+            if (rootFlow.No.is(intentData.value)) {
+                session.beginDialog('/ConversationEnd');
+            }
+            else {
+                session.beginDialog('/help');
+            }
+        })
+            .catch(console.error);
+    }
+]);
+
+bot.dialog('/help',[
+    function (session) {
+        session.send("these are details of contact personal \n\nName : Siddharth Bajaj \n\nEmail : siddharth.bajaj@bcone.com");
+        session.beginDialog('/ConversationEnd');
     }
 ]);
 
