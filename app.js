@@ -77,7 +77,8 @@ bot.on('error', function(message) {
 // Root dialog for entry point in application
 bot.dialog('/', [
     function (session,args, next) {
-        if (session.dialogData.isRootShown === undefined || session.dialogData.isRootShown === false) {
+        /*if (session.dialogData.isRootShown === undefined || session.dialogData.isRootShown === false) {*/
+        if (isShown === false) {
             if (commonAddress !== undefined || commonAddress === {}) {
                 var commonAddress = session.message.address;
             }
