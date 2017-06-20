@@ -80,6 +80,7 @@ bot.dialog('/', [
             if (commonAddress !== undefined || commonAddress === {}) {
                 var commonAddress = session.message.address;
             }
+            //sendEmail();
             //session.send(JSON.stringify( session.message.address));
             console.log(JSON.stringify(session.message.address));
             session.send("Hey " + session.message.user.name.split(" ")[0] + ", Welcome to Innojam!");
@@ -281,4 +282,83 @@ function GetUserDetails(employeeId,cb) {
             cb(data);
         })
     })
+}
+
+//send email code for AWS SES service
+/*function sendEmail(ToEmailAddress) {
+    'use strict';
+    var aws = require('aws-sdk');
+    var ses = new aws.SES({
+        region: 'us-east-1'
+    });
+
+    var eParams = {
+        Destination: {
+            ToAddresses: ['sagar.gohil@bcone.com'] //email id of person who is trying to register
+        },
+        Message: {
+            Body: {
+                Text: {
+                    Data: "Sagar, you have been registered for the InnoJam event. Best of Luck!"
+                }
+            },
+            Subject: {
+                Data: "Registered for Innojam event ✔"
+            }
+        },
+        Source: 'hashim.kahily@bcone.com'  //email id of the sender
+    };
+
+    var email = ses.sendEmail(eParams, function(err, data){
+        if(err) {
+            console.log("Email error : " + err);
+        }
+        else {
+            console.log("===EMAIL SENT===");
+            console.log(data);
+            console.log("EMAIL CODE END");
+            console.log('EMAIL: ', email);
+        }
+    });
+
+}*/
+
+// send mail through node mailer library
+function sendEmail(toEmailAddress) {
+
+    var nodemailer = require('nodemailer');
+
+// Create the transporter with the required configuration for Outlook
+// change the user and pass !
+    var transporter = nodemailer.createTransport({
+        host: "smtp.office365.com", // hostname
+        secureConnection: false, // TLS requires secureConnection to be false
+        port: 587, // port for secure SMTP
+        tls: {
+            ciphers:'SSLv3'
+        },
+        auth: {
+            user: 'sagar.gohil@bcone.com',
+            pass: 'Chinu@123'
+        }
+    });
+
+// setup e-mail data, even with unicode symbols
+    var mailOptions = {
+        from: '"Sagar Gohil"<sagar.gohil@bcone.com>', // sender address (who sends)
+        to: toEmailAddress, // list of receivers (who receives)
+        subject: 'Registered for InnoJam ✔', // Subject line
+        text: 'Hello world ', // plaintext body
+        html: 'Dear <b></b>Sagar,</b><br><br> you have been registered for the Innojam event. Best of Luck!' // html body
+    };
+
+// send mail with defined transport object
+    transporter.sendMail(mailOptions, function(error, info){
+        if(error){
+            return console.log("error from emailer : "+error);
+        }
+
+        console.log('Message sent: ' + info.response);
+    });
+
 }
