@@ -52,7 +52,7 @@ bot.on('error', function(message) {
 
 
 // ConversationUpdate action
-bot.on('conversationUpdate', function (message) {
+/*bot.on('conversationUpdate', function (message) {
     console.log("Called Conversation updated");
     if (message.membersAdded && message.membersAdded.length > 0) {
         var isSelf = false;
@@ -64,33 +64,26 @@ bot.on('conversationUpdate', function (message) {
             .join(', ');
         if (!isSelf) {
             console.log("not self");
-            bot.send(new builder.Message()
+            /!*bot.send(new builder.Message()
                 .address(message.address)
-                .text("Hey " + session.message.user.name.split(" ")[0] + ", Welcome to Innojam!"));
+                .text('Welcome ' + membersAdded + "! How can I help you?"));*!/
             //bot.beginDialog(message.address,'/');
         }
     }
-});
+});*/
 
 // Root dialog for entry point in application
 bot.dialog('/', [
     function (session,args, next) {
-        result = args || {};
-        if (result == undefined || result.response == undefined) {
+        if (session.dialogData.isRootShown === undefined && session.dialogData.isRootShown !== false) {
             if (commonAddress !== undefined || commonAddress === {}) {
                 var commonAddress = session.message.address;
             }
-            //sendEmail();
-            //session.send(JSON.stringify( session.message.address));
-            console.log(JSON.stringify(session.message.address));
-            //session.send("Hey " + session.message.user.name.split(" ")[0] + ", Welcome to Innojam!");
-            builder.Prompts.text(session, "Would you like to register?");
 
-            //bot.send(new builder.Message().address(new IAddress '{"id":"0dac75a3-ede5-4c31-af5e-b95cb3791d85","channelId":"skypeforbusiness","user":{"id":"aditya.das@bcone.com","name":"Aditya Das"},"conversation":{"isGroup":true,"id":"NWYwNmJkY2Ijc2lwOmlubm9qYW1ib3RAYnJpc3RsZWNvbmVvbmxpbmUub25taWNyb3NvZnQuY29t"},"bot":{"id":"sip:innojambot@bristleconeonline.onmicrosoft.com","name":"sip:innojambot@bristleconeonline.onmicrosoft.com"},"serviceUrl":"https://webpoolsg20r04.infra.lync.com/platformservice/tgt-0b9142c259f65d3b918b34dd29074ee2/botframework"}'));
+            session.send("Hey " + session.message.user.name.split(" ")[0] + ", Welcome to Innojam!");
+            builder.Prompts.text(session, "Would you like to register?");
+            session.dialogData.isRootShown = true;
         }
-        /*else if (result.response == "NU") {
-            builder.Prompts.text(session, "Please try again");
-        }*/
     },
     function (session, results) {
         client.message(results.response, {}).then((data) => {
