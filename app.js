@@ -133,7 +133,7 @@ bot.dialog('/UserRegistration',[
                     }
                 }
                 else {
-                    session.beginDialog('/ConversationEnd');
+                    session.beginDialog('/AlreadyRegistered');
                 }
             }
             else {
