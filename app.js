@@ -9,6 +9,8 @@ var o = require('odata');
 var https = require('https');
 var poData = [];
 
+var isShown = false;
+
 const {Wit, log} = require('node-wit');
 
 //=========================================================
@@ -75,7 +77,7 @@ bot.on('error', function(message) {
 // Root dialog for entry point in application
 bot.dialog('/', [
     function (session,args, next) {
-        if (session.dialogData.isRootShown === undefined && session.dialogData.isRootShown !== false) {
+        if (session.dialogData.isRootShown === undefined || session.dialogData.isRootShown === false) {
             if (commonAddress !== undefined || commonAddress === {}) {
                 var commonAddress = session.message.address;
             }
@@ -83,6 +85,7 @@ bot.dialog('/', [
             session.send("Hey " + session.message.user.name.split(" ")[0] + ", Welcome to Innojam!");
             builder.Prompts.text(session, "Would you like to register?");
             session.dialogData.isRootShown = true;
+            isShown = true;
         }
     },
     function (session, results) {
