@@ -179,7 +179,7 @@ bot.dialog('/UserRegistration',[
 bot.dialog('/AlreadyRegistered',[
     function (session) {
         session.send(session.message.user.name.split(" ")[0] + ', your already registered.');
-        builder.prompts.text(session,"do you need any help?");
+        builder.Prompts.text(session,"do you need any help?");
     },
     function (session,results) {
         client.message(results.response, {}).then((data) => {
