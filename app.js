@@ -97,6 +97,7 @@ bot.dialog('/', [
     function (session, results) {
         client.message(results.response, {}).then((data) => {
             var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
+            session.send("intent data : "+JSON.stringify(intentData));
             if (rootFlow.No.is(intentData.value)) {
                 session.beginDialog('/ConversationEnd');
             }
