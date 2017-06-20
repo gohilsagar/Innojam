@@ -52,7 +52,7 @@ bot.on('error', function(message) {
 
 
 // ConversationUpdate action
-bot.on('conversationUpdate', function (message) {
+/*bot.on('conversationUpdate', function (message) {
     console.log("Called Conversation updated");
     if (message.membersAdded && message.membersAdded.length > 0) {
         var isSelf = false;
@@ -64,13 +64,13 @@ bot.on('conversationUpdate', function (message) {
             .join(', ');
         if (!isSelf) {
             console.log("not self");
-            /*bot.send(new builder.Message()
+            /!*bot.send(new builder.Message()
                 .address(message.address)
-                .text('Welcome ' + membersAdded + "! How can I help you?"));*/
+                .text('Welcome ' + membersAdded + "! How can I help you?"));*!/
             //bot.beginDialog(message.address,'/');
         }
     }
-});
+});*/
 
 // Root dialog for entry point in application
 bot.dialog('/', [
@@ -83,7 +83,7 @@ bot.dialog('/', [
             //session.send(JSON.stringify( session.message.address));
             console.log(JSON.stringify(session.message.address));
             session.send("Hey " + session.message.user.name.split(" ")[0] + ", Welcome to Innojam!");
-            builder.Prompts.text(session, "would you like to register?");
+            builder.Prompts.text(session, "Would you like to register?");
 
             //bot.send(new builder.Message().address(new IAddress '{"id":"0dac75a3-ede5-4c31-af5e-b95cb3791d85","channelId":"skypeforbusiness","user":{"id":"aditya.das@bcone.com","name":"Aditya Das"},"conversation":{"isGroup":true,"id":"NWYwNmJkY2Ijc2lwOmlubm9qYW1ib3RAYnJpc3RsZWNvbmVvbmxpbmUub25taWNyb3NvZnQuY29t"},"bot":{"id":"sip:innojambot@bristleconeonline.onmicrosoft.com","name":"sip:innojambot@bristleconeonline.onmicrosoft.com"},"serviceUrl":"https://webpoolsg20r04.infra.lync.com/platformservice/tgt-0b9142c259f65d3b918b34dd29074ee2/botframework"}'));
         }
@@ -118,7 +118,7 @@ bot.dialog('/UserRegistration',[
         ValidateEmployeeId(session, results.response, function (data,isValidated) {
             session.dialogData.data = data;
             session.dialogData.isValidated = isValidated;
-            if (data !== undefined || data.name != undefined) {
+            if (data !== undefined && data !== null) {
                 if (data.registered === false) {
                     if (isValidated === true) {
                         // call service to update user registration
@@ -128,7 +128,7 @@ bot.dialog('/UserRegistration',[
                         session.beginDialog('/ConversationEnd');
                     }
                     else {
-                        session.send("you can only register for yourself, try again with your employee id");
+                        session.send("You can only register for yourself, try again with your employee id");
                         builder.Prompts.text(session, "Please enter valid employee id");
                     }
                 }
@@ -143,32 +143,37 @@ bot.dialog('/UserRegistration',[
         })
     },
     function (session,results,next) {
-        var userSpecificAddress = session.message.address.user;
-        if(session.dialogData.isValidated === false) {
-            ValidateEmployeeId(session, results.response, function (data,isValidated) {
-                session.dialogData.data = data;
-                session.dialogData.isValidated = isValidated;
-                if (data === undefined || data.name == undefined) {
-                    if (isValidated === true) {
-                        // call service to update user registration
-                        RegisterUser(userSpecificAddress, results.response);
+        if (results.response === "NA") {
+            next();
+        }
+        else {
+            var userSpecificAddress = session.message.address.user;
+            if (session.dialogData.isValidated === false) {
+                ValidateEmployeeId(session, results.response, function (data, isValidated) {
+                    session.dialogData.data = data;
+                    session.dialogData.isValidated = isValidated;
+                    if (data !== undefined || data !== null) {
+                        if (isValidated === true) {
+                            // call service to update user registration
+                            RegisterUser(userSpecificAddress, results.response);
 
-                        session.send(session.message.user.name.split(" ")[0] + ', your registration is confirmed.');
-                        session.beginDialog('/ConversationEnd');
+                            session.send(session.message.user.name.split(" ")[0] + ', your registration is confirmed.');
+                            session.beginDialog('/ConversationEnd');
+                        }
+                        else {
+                            session.send("Please try again with valid details!");
+                            session.beginDialog('/ConversationEnd');
+                        }
                     }
                     else {
                         session.send("Please try again with valid details!");
                         session.beginDialog('/ConversationEnd');
                     }
-                }
-                else {
-                    session.send("Please try again with valid details!");
-                    session.beginDialog('/ConversationEnd');
-                }
-            })
-        }
-        else {
-            next();
+                })
+            }
+            else {
+                next();
+            }
         }
     },
     function (session,results) {
@@ -178,8 +183,8 @@ bot.dialog('/UserRegistration',[
 
 bot.dialog('/AlreadyRegistered',[
     function (session) {
-        session.send(session.message.user.name.split(" ")[0] + ', your already registered.');
-        builder.Prompts.text(session,"do you need any help?");
+        session.send(session.message.user.name.split(" ")[0] + ', you are already registered.');
+        builder.Prompts.text(session,"Do you need any help?");
     },
     function (session,results) {
         client.message(results.response, {}).then((data) => {
@@ -192,12 +197,15 @@ bot.dialog('/AlreadyRegistered',[
             }
         })
             .catch(console.error);
+    },
+    function (session,results) {
+        session.endDialogWithResult({response: "NA"});
     }
 ]);
 
 bot.dialog('/help',[
     function (session) {
-        session.send("these are details of contact personal \n\nName : Siddharth Bajaj \n\nEmail : siddharth.bajaj@bcone.com");
+        session.send("Please contact this person for any queries \n\nName : Siddharth Bajaj \n\nEmail : siddharth.bajaj@bcone.com");
         session.beginDialog('/ConversationEnd');
     }
 ]);
@@ -211,19 +219,20 @@ function ValidateEmployeeId(session,response,cb) {
      })
      .catch(console.error);*/
     GetUserDetails(response,function (data) {
-        var userFullName = data.name;
-        var userNameArray = data.name.split(" ");
-        var IsValidated = true;
-        if(userNameArray.length>2) {
-            userFullName = userNameArray[0] + " " + userNameArray[2];
-        }
-        if(session.message.user.name.toLowerCase() === userFullName.toLowerCase())
-        {
-            IsValidated = true;
-        }
-        else
-        {
-            IsValidated = false;
+        var IsValidated = false;
+        if(data !== null && data !==undefined) {
+            var userFullName = data.name;
+            var userNameArray = data.name.split(" ");
+
+            if (userNameArray.length > 2) {
+                userFullName = userNameArray[0] + " " + userNameArray[2];
+            }
+            if (session.message.user.name.toLowerCase() === userFullName.toLowerCase()) {
+                IsValidated = true;
+            }
+            else {
+                IsValidated = false;
+            }
         }
         cb(data,IsValidated);
     });
@@ -232,7 +241,7 @@ function ValidateEmployeeId(session,response,cb) {
 bot.dialog('/ConversationEnd',[
     function (session) {
         session.send('Thank you so much for visiting :)');
-        session.endDialog();
+        session.endDialogWithResult({response: "NA"});
     }
 ]);
 
