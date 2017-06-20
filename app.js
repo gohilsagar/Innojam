@@ -90,6 +90,7 @@ bot.dialog('/', [
         }
         else
         {
+            isShown = true;
             next();
         }
     },
