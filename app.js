@@ -32,6 +32,10 @@ var connector = new builder.ChatConnector({
 var bot = new builder.UniversalBot(connector);
 server.post('/api/messages', connector.listen());
 
+/*const { WitRecognizer } = require('botbuilder-wit');
+// Alternatively, you can add a global recognizer to the bot
+bot.recognizer(new WitRecognizer('OMA6J3GMQV43OCFXKIA3QKP7BJQCFDBT'));*/
+
 //=========================================================
 // Bots Dialogs
 //=========================================================
@@ -95,6 +99,7 @@ bot.dialog('/', [
         }
     },
     function (session, results) {
+        isShown = false;
         client.message(results.response, {}).then((data) => {
             var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
             //session.send("intent data : "+JSON.stringify(intentData));
@@ -110,7 +115,9 @@ bot.dialog('/', [
     function (session,results) {
         session.endDialog();
     }
-]);
+]).triggerAction({
+    matches: '/Hi|hi|hello|Hello/'
+});
 
 bot.dialog('/UserRegistration',[
     function (session,args,next) {
