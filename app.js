@@ -53,9 +53,9 @@ bot.recognizer(recognizer);
 
 // On Error
 bot.on('error', function(message) {
-    bot.send(new builder.Message()
+   /* bot.send(new builder.Message()
         .address(commonAddress)
-        .text('Error : ' +message));
+        .text('Error : ' +message));*/
     console.log('[error] called' + message);
 
 });
