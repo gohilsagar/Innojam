@@ -2,226 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb9dce3-d65d-44d7-b7d8-9d6ef5534ee7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/RecognizerFilter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/index-min.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/qunit/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/qunit/qunit-git.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/qunit/qunit-git.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/AUTHORS.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/almond.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/almond.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/jsdoc.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/lib/core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/lib/curve255.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/lib/dh.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/lib/eddsa.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/lib/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jodid25519/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/CHANGELOG_20170213194220.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/CHANGELOG_20170213194403.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/CHANGELOG_20170213194453.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/CHANGELOG_20170213194602.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/CHANGELOG_20170213194730.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/README_20170308140601.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/README_20170309185833.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/README_20170309185917.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/README_20170309190102.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/README_20170321171635.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/README_20170321171728.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/README_20170321171847.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/README_20170321172244.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/README_20170321172314.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/verify_20170327175344.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/verify_20170327175426.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/verify_20170327175443.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/.history/verify_20170327175706.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/punycode/LICENSE-MIT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/punycode/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/punycode/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/punycode/punycode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/safe-buffer/browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/.jshintrc" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/Channel.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/Channel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/DefaultLocalizer.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/DefaultLocalizer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/Message.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/Message.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/RemoteSessionLogger.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/RemoteSessionLogger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/Session.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/Session.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/SessionLogger.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/SessionLogger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/botbuilder.d.ts" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/botbuilder.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/botbuilder.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/botbuilder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/ChatConnector.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/ChatConnector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/ConsoleConnector.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/ConsoleConnector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/Library.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/Library.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/OpenIdMetadata.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/OpenIdMetadata.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/UniversalBot.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/bots/UniversalBot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/AnimationCard.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/AnimationCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/AudioCard.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/AudioCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/CardAction.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/CardAction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/CardImage.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/CardImage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/CardMedia.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/CardMedia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/HeroCard.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/HeroCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/Keyboard.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/Keyboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/MediaCard.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/MediaCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/ReceiptCard.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/ReceiptCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/SigninCard.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/SigninCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/SuggestedActions.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/SuggestedActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/ThumbnailCard.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/ThumbnailCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/VideoCard.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/cards/VideoCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/consts.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/consts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/BotConnectorBot.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/BotConnectorBot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/CommandDialog.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/CommandDialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/LegacyPrompts.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/LegacyPrompts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/LuisDialog.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/LuisDialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/TextBot.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/deprecated/TextBot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/ActionSet.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/ActionSet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/Dialog.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/Dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/DialogAction.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/DialogAction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/EntityRecognizer.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/EntityRecognizer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/IntentDialog.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/IntentDialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/IntentRecognizer.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/IntentRecognizer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/IntentRecognizerSet.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/IntentRecognizerSet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/LocalizedRegExpRecognizer.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/LocalizedRegExpRecognizer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/LuisRecognizer.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/LuisRecognizer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/Prompt.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/Prompt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptAttachment.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptAttachment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptChoice.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptChoice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptConfirm.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptConfirm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptNumber.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptNumber.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptRecognizers.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptRecognizers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptText.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptText.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptTime.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/PromptTime.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/Prompts.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/Prompts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/RegExpRecognizer.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/RegExpRecognizer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/SimpleDialog.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/SimpleDialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/WaterfallDialog.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/dialogs/WaterfallDialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/locale/de/BotBuilder.json" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/locale/de/BotBuilder.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/locale/fr/BotBuilder.json" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/locale/fr/BotBuilder.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/locale/zh-Hans/BotBuilder.json" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/locale/zh-Hans/BotBuilder.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/logger.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/logger.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/middleware/Middleware.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/middleware/Middleware.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/storage/BotStorage.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/storage/BotStorage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/package.json" afterPath="$PROJECT_DIR$/node_modules/botbuilder/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/botbuilder/tests/actions.js" afterPath="$PROJECT_DIR$/node_modules/botbuilder/tests/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/chrono-node/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/README.md" afterPath="$PROJECT_DIR$/node_modules/chrono-node/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/bower.json" afterPath="$PROJECT_DIR$/node_modules/chrono-node/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/chrono.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/chrono.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/chrono.map.json" afterPath="$PROJECT_DIR$/node_modules/chrono-node/chrono.map.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/chrono.min.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/chrono.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/package.json" afterPath="$PROJECT_DIR$/node_modules/chrono-node/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/chrono.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/chrono.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/options.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/options.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/EN/ENMonthNameLittleEndianParser.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/EN/ENMonthNameLittleEndianParser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/EN/ENMonthNameMiddleEndianParser.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/EN/ENMonthNameMiddleEndianParser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/EN/ENSlashDateFormatParser.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/EN/ENSlashDateFormatParser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/EN/ENTimeExpressionParser.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/EN/ENTimeExpressionParser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/FR/FRMonthNameLittleEndianParser.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/FR/FRMonthNameLittleEndianParser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/parser.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/parsers/parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/refiners/DE/DEMergeDateTimeRefiner.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/refiners/DE/DEMergeDateTimeRefiner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/refiners/EN/ENMergeDateTimeRefiner.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/refiners/EN/ENMergeDateTimeRefiner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/refiners/FR/FRMergeDateTimeRefiner.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/refiners/FR/FRMergeDateTimeRefiner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/src/utils/FR.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/src/utils/FR.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_casual.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_casual.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_dash.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_dash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_deadline.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_deadline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_little_endian.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_little_endian.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_time_ago.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_time_ago.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_time_exp.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_time_exp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_weekday.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_de_weekday.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_casual.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_casual.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_dash.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_dash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_deadline.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_deadline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_inter_std.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_inter_std.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_little_endian.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_little_endian.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_middle_endian.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_middle_endian.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_month.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_month.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_option_forward.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_option_forward.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_relative.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_relative.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_slash.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_slash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_time_ago.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_time_ago.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_time_exp.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_time_exp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_weekday.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_en_weekday.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_casual.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_casual.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_dash.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_dash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_deadline.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_deadline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_little_endian.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_little_endian.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_slash.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_slash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_time_ago.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_time_ago.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_time_exp.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_es_time_exp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_example.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_example.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_casual.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_casual.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_dash.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_dash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_deadline.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_deadline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_little_endian.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_little_endian.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_slash.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_slash.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_time_ago.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_time_ago.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_time_exp.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_time_exp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_weekday.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_fr_weekday.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_jp_casual.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_jp_casual.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_jp_standard.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_jp_standard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_system.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_system.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_casual.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_casual.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_date.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_date.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_deadline.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_deadline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_time_exp.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_time_exp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_weekday.js" afterPath="$PROJECT_DIR$/node_modules/chrono-node/test/test_zh_hant_weekday.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/jsonwebtoken/package.json" afterPath="$PROJECT_DIR$/node_modules/jsonwebtoken/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/Readme.md" afterPath="$PROJECT_DIR$/node_modules/promise/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/domains/core.js" afterPath="$PROJECT_DIR$/node_modules/promise/domains/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/domains/es6-extensions.js" afterPath="$PROJECT_DIR$/node_modules/promise/domains/es6-extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/domains/node-extensions.js" afterPath="$PROJECT_DIR$/node_modules/promise/domains/node-extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/domains/rejection-tracking.js" afterPath="$PROJECT_DIR$/node_modules/promise/domains/rejection-tracking.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/domains/synchronous.js" afterPath="$PROJECT_DIR$/node_modules/promise/domains/synchronous.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/lib/core.js" afterPath="$PROJECT_DIR$/node_modules/promise/lib/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/lib/es6-extensions.js" afterPath="$PROJECT_DIR$/node_modules/promise/lib/es6-extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/lib/node-extensions.js" afterPath="$PROJECT_DIR$/node_modules/promise/lib/node-extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/lib/rejection-tracking.js" afterPath="$PROJECT_DIR$/node_modules/promise/lib/rejection-tracking.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/lib/synchronous.js" afterPath="$PROJECT_DIR$/node_modules/promise/lib/synchronous.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/package.json" afterPath="$PROJECT_DIR$/node_modules/promise/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/core.js" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/es6-extensions.js" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/es6-extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/node-extensions.js" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/node-extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/rejection-tracking.js" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/rejection-tracking.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/setimmediate/synchronous.js" afterPath="$PROJECT_DIR$/node_modules/promise/setimmediate/synchronous.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/src/core.js" afterPath="$PROJECT_DIR$/node_modules/promise/src/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/promise/src/node-extensions.js" afterPath="$PROJECT_DIR$/node_modules/promise/src/node-extensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/safe-buffer/README.md" afterPath="$PROJECT_DIR$/node_modules/safe-buffer/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/safe-buffer/index.js" afterPath="$PROJECT_DIR$/node_modules/safe-buffer/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/safe-buffer/package.json" afterPath="$PROJECT_DIR$/node_modules/safe-buffer/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/safe-buffer/test.js" afterPath="$PROJECT_DIR$/node_modules/safe-buffer/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/LICENSE" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/README.md" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/benchmark/benchmark.js" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/benchmark/benchmark.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/bower.json" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/demo/angular.html" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/demo/angular.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js.map" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js.map" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/gulpfile.js" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/package.json" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/src/angular-sprintf.js" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/src/angular-sprintf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/src/sprintf.js" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/src/sprintf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/test/test.js" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/test/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sprintf-js/test/test_validation.js" afterPath="$PROJECT_DIR$/node_modules/sprintf-js/test/test_validation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/dhe.js" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/dhe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/key.js" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/key.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sshpk/lib/private-key.js" afterPath="$PROJECT_DIR$/node_modules/sshpk/lib/private-key.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/sshpk/package.json" afterPath="$PROJECT_DIR$/node_modules/sshpk/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -236,20 +18,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="164" column="17" lean-forward="false" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
+            <state relative-caret-position="185">
+              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding>
-                <element signature="e#4356#4447#0" expanded="false" />
-                <element signature="e#10658#11674#0" expanded="false" />
+                <element signature="e#4461#4552#0" expanded="false" />
+                <element signature="e#10763#11779#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -306,8 +88,8 @@
         <option value="C:/Final Stag/Bot/app.js" />
         <option value="https.js" />
         <option value="events.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -514,12 +296,12 @@
       <workItem from="1497939228539" duration="17715000" />
       <workItem from="1498043763710" duration="830000" />
       <workItem from="1498198466766" duration="1415000" />
-      <workItem from="1498199904707" duration="566000" />
+      <workItem from="1498199904707" duration="5369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226207000" />
+    <option name="totallyTimeSpent" value="231010000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -531,7 +313,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25074404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -565,52 +347,52 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>275</line>
+          <line>279</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>280</line>
+          <line>284</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>281</line>
+          <line>285</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>260</line>
+          <line>264</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>203</line>
+          <line>207</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>204</line>
+          <line>208</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>167</line>
+          <line>171</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>170</line>
+          <line>174</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>240</line>
+          <line>244</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>83</line>
+          <line>87</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
@@ -630,8 +412,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -641,8 +423,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -652,8 +434,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -663,26 +445,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -699,8 +463,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -717,8 +481,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,8 +499,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -753,8 +517,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -771,8 +535,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -789,8 +553,26 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -807,8 +589,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -818,8 +600,8 @@
         <state relative-caret-position="153">
           <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -836,8 +618,8 @@
         <state relative-caret-position="612">
           <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -854,8 +636,8 @@
         <state relative-caret-position="612">
           <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -872,8 +654,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,8 +665,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -894,8 +676,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -905,8 +687,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -923,8 +705,8 @@
         <state relative-caret-position="1836">
           <caret line="110" column="9" lean-forward="false" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -941,8 +723,8 @@
         <state relative-caret-position="935">
           <caret line="57" column="3" lean-forward="true" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
           <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1034,22 +816,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="164" column="17" lean-forward="false" selection-start-line="164" selection-start-column="17" selection-end-line="164" selection-end-column="17" />
-          <folding>
-            <element signature="e#4356#4447#0" expanded="false" />
-            <element signature="e#10658#11674#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="27" lean-forward="false" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#4461#4552#0" expanded="false" />
+            <element signature="e#10763#11779#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
