@@ -104,6 +104,7 @@ bot.dialog('/', [
     },
     function (session, results) {
         isShown = false;
+/*
         client.message(results.response, {}).then((data) => {
          var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
          session.send("intent data : "+JSON.stringify(intentData));
@@ -115,13 +116,14 @@ bot.dialog('/', [
          }
          })
          .catch(console.error);
+*/
 
-        /*if (results.response.toUpperCase().indexOf("NO") != -1) {
+        if (results.response.toUpperCase().indexOf("NO") != -1) {
             session.beginDialog('/ConversationEnd');
         }
         else if (results.response.toUpperCase().indexOf("YES") != -1) {
             session.beginDialog('/UserRegistration');
-        }*/
+        }
     },
     function (session,results) {
         session.endDialog();
