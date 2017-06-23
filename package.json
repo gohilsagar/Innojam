@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.73.0",
-    "botbuilder": "^3.8.1",
+    "botbuilder": "^3.8.4",
     "botbuilder-wit": "^2.0.8",
     "dateformat": "^2.0.0",
     "enum": "^2.4.0",
