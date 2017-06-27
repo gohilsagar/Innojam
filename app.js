@@ -104,25 +104,29 @@ bot.dialog('/', [
     },
     function (session, results) {
         isShown = false;
-        client.message(results.response, {}).then((data) => {
-         var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
-         session.send("intent data : "+JSON.stringify(intentData));
-         if (rootFlow.No.is(intentData.value)) {
+        var witPromise = client.message(results.response, {});
+        setTimeout(function () {
+            //console.log('Blah blah blah blah extra-blah');
+
+            witPromise.then((data) => {
+                var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
+                session.send("intent data : " + JSON.stringify(intentData));
+                if (rootFlow.No.is(intentData.value)) {
+                    session.beginDialog('/ConversationEnd');
+                }
+                else {
+                    session.beginDialog('/UserRegistration');
+                }
+            })
+                .catch(console.error);
+        }, 2000);
+
+        /* if (results.response.toUpperCase().indexOf("NO") != -1) {
          session.beginDialog('/ConversationEnd');
          }
-         else {
+         else if (results.response.toUpperCase().indexOf("YES") != -1) {
          session.beginDialog('/UserRegistration');
-         }
-         })
-         .catch(console.error);
-
-
-       /* if (results.response.toUpperCase().indexOf("NO") != -1) {
-            session.beginDialog('/ConversationEnd');
-        }
-        else if (results.response.toUpperCase().indexOf("YES") != -1) {
-            session.beginDialog('/UserRegistration');
-        }*/
+         }*/
     },
     function (session,results) {
         session.endDialog();
