@@ -110,12 +110,16 @@ bot.dialog('/', [
 
             witPromise.then((data) => {
                 var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
-                session.send("intent data : " + JSON.stringify(intentData));
-                if (rootFlow.No.is(intentData.value)) {
-                    session.beginDialog('/ConversationEnd');
-                }
-                else {
-                    session.beginDialog('/UserRegistration');
+                if(intentData!=={}) {
+
+
+                    session.send("intent data : " + JSON.stringify(intentData));
+                    if (rootFlow.No.is(intentData.value)) {
+                        session.beginDialog('/ConversationEnd');
+                    }
+                    else {
+                        session.beginDialog('/UserRegistration');
+                    }
                 }
             })
                 .catch(console.error);
