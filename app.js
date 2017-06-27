@@ -9,7 +9,9 @@ var o = require('odata');
 var https = require('https');
 var poData = [];
 
+
 var isShown = false;
+
 
 const {Wit, log} = require('node-wit');
 
@@ -103,28 +105,26 @@ bot.dialog('/', [
         }
     },
     function (session, results) {
-        isShown = false;
+        /*isShown = false;
         var witPromise = client.message(results.response, {});
-        setTimeout(function () {
-            //console.log('Blah blah blah blah extra-blah');
 
-            witPromise.then((data) => {
-                var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
-                if(intentData!=={}) {
+        witPromise.then((data) => {
+            var intentData = data.entities.intent != undefined ? data.entities.intent[0] : {};
+            if (intentData !== {}) {
 
-
-                    session.send("intent data : " + JSON.stringify(intentData));
-                    if (rootFlow.No.is(intentData.value)) {
-                        session.beginDialog('/ConversationEnd');
-                    }
-                    else {
-                        session.beginDialog('/UserRegistration');
-                    }
+                session.send("intent data : " + JSON.stringify(intentData));
+                if (rootFlow.No.is(intentData.value)) {
+                    session.beginDialog('/ConversationEnd');
                 }
-            })
-                .catch(console.error);
-        }, 2000);
+                else {
+                    session.beginDialog('/UserRegistration');
+                }
+            }
+        })
+            .catch(console.error);
+*/
 
+        session.send(JSON.stringify(results));
         /* if (results.response.toUpperCase().indexOf("NO") != -1) {
          session.beginDialog('/ConversationEnd');
          }
